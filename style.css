@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #081b29;
+    color: #ededed;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    text-decoration: none;
+    color: #ededed;
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar a {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 35px;
+    color: #ededed;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+}
+
+.Home {
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: right center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+.Home2 {
+    max-width: 600px;
+    text-align: center;
+}
+
+.Home2 h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.Home2 h3 {
+    font-size: 28px;
+    color: #00abf0;
+    font-weight: 700;
+}
+
+.Home2 p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.Home .btn-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-box a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    color: #00abf0;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.home-sci a {
+    align-content: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.img-box {
+    display: none; /* إخفاء الصورة في الشاشات الصغيرة */
+}
+
+.home-imghover {
+    display: none; /* إخفاء الجزء hover للشاشات الصغيرة */
+}
+
+/* استعلامات الوسائط لتنسيق الهاتف */
+@media (max-width: 768px) {
+    .nav {
+        padding: 10px 5%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .Home2 h1 {
+        font-size: 32px;
+    }
+
+    .Home2 h3 {
+        font-size: 24px;
+    }
+
+    .btn-box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-box a {
+        width: 100%;
+    }
+
+    .home-sci {
+        bottom: 20px;
+        justify-content: center;
+    }
+}
